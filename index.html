@@ -107,6 +107,45 @@
       border: 1px solid #999;
     }
 
+    .resume-mobile-link {
+      display: none;
+    }
+
+    @media (max-width: 800px) {
+      .resume-viewer {
+        display: none;
+      }
+
+      .resume-mobile-link {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .resume-mobile-link a {
+        display: inline-block;
+        padding: 12px 18px;
+        border: 1px solid #222;
+        color: #222;
+        text-decoration: none;
+        background: #f4f1ea;
+      }
+    }
+
+    .painting {
+      width: 100%;
+      border: 1px solid #999;
+      margin-top: 10px;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+      font-style: italic;
+      text-align: center;
+    }
+
     footer {
       margin-top: 40px;
       border-top: 1px solid #aaa;
@@ -204,9 +243,24 @@
       </div>
     </section>
 
-    <section class="box" style="margin-top: 25px;">
+    <section class="box resume-box" style="margin-top: 25px;">
       <h3>Resume</h3>
+
       <iframe src="resume-work-2026feb.pdf" class="resume-viewer"></iframe>
+
+      <p class="resume-mobile-link">
+        <a href="resume-work-2026feb.pdf" target="_blank">Open Resume PDF</a>
+      </p>
+    </section>
+
+    <section class="box" style="margin-top: 25px;">
+      <h3>Favorite Painting (Louvre Collection)</h3>
+
+      <img src="painting.png" alt="favorite painting" class="painting">
+
+      <p class="caption">
+        A timeless piece reflecting strength, chaos, and questionable life decisions.
+      </p>
     </section>
 
     <footer>
