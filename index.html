@@ -148,10 +148,36 @@
 
     .address {
       margin-top: 12px;
-      font-size: 26px;
+      font-size: 20px;
       color: #444;
       font-style: italic;
       line-height: 1.5;
+    }
+
+    .license-img {
+      width: 100%;
+      border: 1px solid #999;
+      margin-top: 10px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .license-img:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
+
+    .passport-img {
+      width: 100%;
+      border: 1px solid #999;
+      margin-top: 10px;
+      border-radius: 1.8pc;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      transition: 0.3s ease;
+    }
+
+    .passport-img:hover {
+      transform: scale(1.02);
     }
 
     footer {
@@ -243,13 +269,6 @@
         <img src="banana-cat-visa.jpeg" alt="credit card" class="credit-card" />
         <h3>Credit Card (Back)</h3>
         <img src="back.png" alt="credit card" class="credit-card" />
-      </div>
-
-      <div class="box">
-        <h3>Void Cheque</h3>
-        <img src="banana-cat-void-cheque.png" alt="void cheque" class="void-cheque" />
-        <h3>SIN Number</h3>
-        <div class="sin">925-367-666</div>
 
         <h3>Address</h3>
         <p class="address">
@@ -258,15 +277,31 @@
           Montréal, QC B4N 4N4
         </p>
       </div>
+
+      <div class="box">
+        <h3>Void Cheque</h3>
+        <img src="banana-cat-void-cheque.png" alt="void cheque" class="void-cheque" />
+
+        <h3>Driving License</h3>
+        <img src="driver-license.png" alt="Driving License" class="license-img">
+        <p class="caption">
+          Government-issued proof of mobility and snack responsibility.
+        </p>
+
+        <h3>SIN Number</h3>
+        <div class="sin">925-367-666</div>
+      </div>
     </section>
 
-    <section class="box resume-box" style="margin-top: 25px;">
-      <h3>Resume</h3>
+    <section class="box" style="margin-top: 25px;">
+      <h3>Passport</h3>
 
-      <iframe src="resume-work-2026feb.pdf" class="resume-viewer"></iframe>
+      <a href="passport.png" target="_blank">
+        <img src="passport.png" alt="Passport" class="passport-img">
+      </a>
 
-      <p class="resume-mobile-link">
-        <a href="resume-work-2026feb.pdf" target="_blank">Open Resume PDF</a>
+      <p class="caption">
+        International travel authorization and banana export permit.
       </p>
     </section>
 
@@ -277,6 +312,16 @@
 
       <p class="caption">
         A timeless piece reflecting strength, chaos, and questionable life decisions.
+      </p>
+    </section>
+
+    <section class="box resume-box" style="margin-top: 25px;">
+      <h3>Resume</h3>
+
+      <iframe src="resume-work-2026feb.pdf" class="resume-viewer"></iframe>
+
+      <p class="resume-mobile-link">
+        <a href="resume-work-2026feb.pdf" target="_blank">Open Resume PDF</a>
       </p>
     </section>
 
